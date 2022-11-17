@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+p {
+  font-family: Lato;
+}
+.button {
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  &.delete {
+    background-color: #f44336;
+  }
+  &.edit {
+    background-color: #008cba;
+  }
+}
+h1 {
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.post-wrapper {
+  width: 900px;
+  margin: 0 auto;
+  .post-container {
+    width: 283px;
+    display: inline-block;
+    margin-right: 25px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 25px;
+    vertical-align: top;
+    height: 300px;
+    position: relative;
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+    .delete-cta {
+      position: absolute;
+      bottom: 15px;
+      right: 10px;
+    }
+    .edit-cta {
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+    }
+  }
+}
